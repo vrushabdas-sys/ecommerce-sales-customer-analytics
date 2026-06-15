@@ -151,7 +151,7 @@ How has revenue changed over time?
 
 ### Output
 
-![Monthly Revenue Trend](screenshots/monthly_revenue_trend.png)
+![Monthly Revenue Trend](monthly_revenue_trend.png)
 
 ---
 
@@ -169,7 +169,7 @@ Who are the highest-value customers?
 
 ### Output
 
-![Top Customers](screenshots/top_10_customers_by_spending.png)
+![Top Customers](top_10_customers_by_spending.png)
 
 ---
 
@@ -187,7 +187,7 @@ Which categories generate the highest revenue?
 
 ### Output
 
-![Revenue by Category](screenshots/revenue_by_category.png)
+![Revenue by Category](revenue_by_category.png)
 
 ---
 
@@ -205,7 +205,7 @@ Which products generate the highest revenue?
 
 ### Output
 
-![Top Products by Revenue](screenshots/top_products_by_revenue.png)
+![Top Products by Revenue](top_products_by_revenue.png)
 
 ---
 
@@ -223,7 +223,7 @@ How many customers return and purchase again?
 
 ### Output
 
-![Customer Retention](screenshots/monthly_customer_retention.png)
+![Customer Retention](monthly_customer_retention.png)
 
 ---
 
@@ -241,7 +241,7 @@ Which categories receive the highest customer ratings?
 
 ### Output
 
-![Category Ratings](screenshots/category_wise_product_ratings.png)
+![Category Ratings](category_wise_product_ratings.png)
 
 ---
 
@@ -259,7 +259,7 @@ Which customers added products to cart but did not complete a purchase?
 
 ### Output
 
-![Abandoned Carts](screenshots/customers_with_abandoned_carts.png)
+![Abandoned Carts](customers_with_abandoned_carts.png)
 
 ---
 
