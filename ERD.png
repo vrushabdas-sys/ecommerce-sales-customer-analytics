@@ -1,0 +1,83 @@
++------------------+
+|    Categories    |
++------------------+
+| PK categoryId    |
+| categoryName     |
++------------------+
+          |
+          | 1
+          |
+          | M
++------------------+
+|     Products     |
++------------------+
+| PK productId     |
+| productName      |
+| productCode      |
+| FK categoryId    |
++------------------+
+          |
+          | 1
+          |
+          | M
+     +----+------------------+
+     |                       |
+     |                       |
+     v                       v
+
++------------------+   +------------------+
+|    OrderItems    |   | ProductReviews   |
++------------------+   +------------------+
+| PK orderItemId   |   | PK reviewId      |
+| FK orderId       |   | FK custId        |
+| FK productCode   |   | FK productCode   |
+| qty              |   | stars            |
+| unitPrice        |   | submit_datetime  |
++------------------+   +------------------+
+
+          ^
+          |
+          |
+          | M
+          |
+          | 1
+
++------------------+
+|      Orders      |
++------------------+
+| PK orderId       |
+| orderDate        |
+| FK custId        |
+| orderAmount      |
++------------------+
+          ^
+          |
+          |
+          | M
+          |
+          | 1
+
++------------------+
+|    Customers     |
++------------------+
+| PK custId        |
+| custName         |
+| email            |
+| city             |
++------------------+
+          |
+          |
+     +----+----+
+     |         |
+     |         |
+     v         v
+
++------------------+   +------------------+
+|       Cart       |
++------------------+
+| PK cartId        |
+| FK custId        |
+| FK productCode   |
+| quantity         |
+| date_added       |
++------------------+
