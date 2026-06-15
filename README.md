@@ -2,146 +2,319 @@
 
 ## Project Overview
 
-This project simulates a real-world e-commerce database and demonstrates advanced SQL analytics techniques used by Data Analysts to extract business insights from transactional data.
+This project simulates a real-world E-Commerce business environment and demonstrates how SQL can be used to solve business problems and generate actionable insights from transactional data.
 
-The project contains 5,600+ records distributed across 7 relational tables and covers customer behavior analysis, sales performance tracking, product analytics, category performance, cart analysis, and customer review analytics.
+The project contains **5,600+ records** distributed across **7 relational tables** and covers:
+
+- Sales Analytics
+- Customer Analytics
+- Product Analytics
+- Category Analytics
+- Customer Retention Analysis
+- Product Review Analytics
+- Cart & Abandoned Cart Analysis
 
 ---
 
 ## Business Problem
 
-E-commerce companies generate large volumes of transactional data every day. The objective of this project is to analyze customer purchasing behavior, product performance, revenue trends, customer retention, and product ratings to support data-driven business decisions.
+E-commerce companies generate large volumes of transactional data every day. The objective of this project is to analyze customer purchasing behavior, sales performance, product performance, category contribution, customer retention, and shopping cart activity to support data-driven business decisions.
 
 ---
 
 ## Database Schema
 
-The database consists of the following tables:
+The database consists of 7 relational tables connected using Primary Keys and Foreign Keys.
 
-| Table          | Description                    |
-| -------------- | ------------------------------ |
-| Categories     | Product category information   |
-| Products       | Product catalog                |
-| Customers      | Customer master data           |
-| Orders         | Customer orders                |
-| OrderItems     | Product-level order details    |
-| Cart           | Shopping cart activity         |
-| ProductReviews | Product review and rating data |
+### Tables Used
+
+| Table | Description |
+|---------|-------------|
+| Categories | Product category information |
+| Products | Product catalog |
+| Customers | Customer master data |
+| Orders | Customer orders |
+| OrderItems | Product-level order details |
+| Cart | Shopping cart activity |
+| ProductReviews | Product ratings and reviews |
+
+---
+
+## ER Diagram
+
+![ER Diagram](ERD.png)
 
 ---
 
 ## Dataset Summary
 
-| Table          | Records |
-| -------------- | ------: |
-| Categories     |       8 |
-| Products       |     100 |
-| Customers      |     200 |
-| Orders         |   1,000 |
-| OrderItems     |   3,000 |
-| Cart           |     500 |
-| ProductReviews |     800 |
+| Table | Records |
+|---------|---------:|
+| Categories | 8 |
+| Products | 100 |
+| Customers | 200 |
+| Orders | 1,000 |
+| OrderItems | 3,000 |
+| Cart | 500 |
+| ProductReviews | 800 |
 
-**Total Records: 5,608+**
+### Total Records Analyzed
+
+**5,608+ Records**
 
 ---
 
 ## SQL Concepts Used
 
-* Joins (INNER JOIN, LEFT JOIN)
-* Aggregate Functions
-* GROUP BY & HAVING
-* Common Business KPIs
-* Window Functions
-* Ranking Functions
-* Revenue Analysis
-* Customer Segmentation
-* Product Performance Analysis
-* Review Analytics
-* Cart Analytics
-* Date Functions
+### SQL Fundamentals
+
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- HAVING
+- Aggregate Functions
+
+### Intermediate SQL
+
+- INNER JOIN
+- LEFT JOIN
+- Subqueries
+- CASE Statements
+- Date Functions
+
+### Advanced SQL
+
+- Common Table Expressions (CTEs)
+- Window Functions
+- Ranking Functions
+- Customer Retention Analysis
+- Revenue Analytics
+- Business KPI Reporting
 
 ---
 
-## Key Business Questions Solved
+# Business Questions Solved
 
 ### Sales Analytics
 
-* What is the total revenue generated?
-* What is the monthly sales trend?
-* Which month generated the highest revenue?
-* What is the average order value?
+- What is the total revenue generated?
+- What is the monthly sales trend?
+- Which month generated the highest revenue?
+- What is the average order value?
 
 ### Customer Analytics
 
-* Who are the top spending customers?
-* Which customers are repeat buyers?
-* Which city contributes the most customers?
-* What is the customer order frequency?
+- Who are the top spending customers?
+- Which customers are repeat buyers?
+- What is the customer retention trend?
+- Which city contributes the most customers?
 
 ### Product Analytics
 
-* Which products generate the highest revenue?
-* Which products sell the most units?
-* Which products have never been ordered?
-* What are the top-performing products?
+- Which products generate the highest revenue?
+- Which products sell the most units?
+- Which products have never been ordered?
 
 ### Category Analytics
 
-* Which category generates the highest revenue?
-* What is the revenue contribution by category?
-* Which category sells the highest volume?
+- Which category generates the highest revenue?
+- Which category contributes the highest sales volume?
 
 ### Review Analytics
 
-* Which products receive the highest ratings?
-* Which products receive the lowest ratings?
-* What is the review distribution?
+- Which categories receive the highest ratings?
+- Which categories receive the lowest ratings?
 
 ### Cart Analytics
 
-* Which products are most frequently added to cart?
-* What is the average cart size?
-* What is the estimated value of abandoned carts?
+- Which customers abandoned their carts?
+- What is the potential revenue loss from abandoned carts?
 
 ---
 
-## Project Structure
+# Query Output Screenshots
 
-Ecommerce-SQL-Analytics/
+---
 
-├── schema.sql
+## Monthly Revenue Trend Analysis
 
+### Business Question
+
+How has revenue changed over time?
+
+### Key Insights
+
+- Revenue increased significantly during 2025.
+- December 2025 generated the highest revenue.
+- Seasonal revenue spikes were observed during year-end periods.
+
+### Output
+
+![Monthly Revenue Trend](screenshots/monthly_revenue_trend.png)
+
+---
+
+## Top 10 Customers by Spending
+
+### Business Question
+
+Who are the highest-value customers?
+
+### Key Insights
+
+- Customer_21 generated the highest revenue.
+- Top customers contributed a significant share of total sales.
+- High-value customers can be targeted through loyalty programs.
+
+### Output
+
+![Top Customers](screenshots/top_10_customers_by_spending.png)
+
+---
+
+## Revenue Contribution by Category
+
+### Business Question
+
+Which categories generate the highest revenue?
+
+### Key Insights
+
+- Clothing generated the highest revenue.
+- Beauty and Toys & Games were among the top-performing categories.
+- Home & Kitchen generated the lowest revenue.
+
+### Output
+
+![Revenue by Category](screenshots/revenue_by_category.png)
+
+---
+
+## Top Products by Revenue
+
+### Business Question
+
+Which products generate the highest revenue?
+
+### Key Insights
+
+- PRD061 generated the highest revenue.
+- Revenue is concentrated among a small group of products.
+- Top-performing products should be prioritized in promotions and inventory planning.
+
+### Output
+
+![Top Products by Revenue](screenshots/top_products_by_revenue.png)
+
+---
+
+## Monthly Customer Retention Analysis
+
+### Business Question
+
+How many customers return and purchase again?
+
+### Key Insights
+
+- Customer retention remained relatively stable throughout the analysis period.
+- June 2025 recorded the highest retained customer count.
+- Repeat purchases contributed significantly to monthly activity.
+
+### Output
+
+![Customer Retention](screenshots/monthly_customer_retention.png)
+
+---
+
+## Category-wise Product Ratings Analysis
+
+### Business Question
+
+Which categories receive the highest customer ratings?
+
+### Key Insights
+
+- Beauty received the highest average rating.
+- Books and Electronics maintained ratings above 3.0.
+- Sports & Outdoors received the lowest average rating.
+
+### Output
+
+![Category Ratings](screenshots/category_wise_product_ratings.png)
+
+---
+
+## Customers with Abandoned Carts
+
+### Business Question
+
+Which customers added products to cart but did not complete a purchase?
+
+### Key Insights
+
+- Multiple customers abandoned their carts before checkout.
+- Abandoned carts represent potential lost revenue.
+- Retargeting campaigns can help recover these sales.
+
+### Output
+
+![Abandoned Carts](screenshots/customers_with_abandoned_carts.png)
+
+---
+
+# Project Structure
+
+```text
+ecommerce-sales-customer-analytics
+│
+├── database_schema.sql
 ├── data_generator.sql
-
-├── analytics_queries.sql
-
+├── queries.sql
 ├── README.md
-
-└── ERD.png
-
----
-
-## Tools Used
-
-* MySQL
-* MySQL Workbench
-* SQL
-* GitHub
-
----
-
-## Key Insights Generated
-
-* Identified top revenue-generating products and categories.
-* Analyzed monthly revenue trends and seasonality.
-* Discovered high-value customers contributing significant revenue.
-* Evaluated customer purchasing behavior and repeat purchase patterns.
-* Assessed product ratings and customer satisfaction metrics.
-* Estimated potential revenue loss from cart abandonment.
+├── ERD.png
+│
+└── screenshots
+    ├── monthly_revenue_trend.png
+    ├── top_10_customers_by_spending.png
+    ├── revenue_by_category.png
+    ├── top_products_by_revenue.png
+    ├── monthly_customer_retention.png
+    ├── category_wise_product_ratings.png
+    └── customers_with_abandoned_carts.png
+```
 
 ---
 
-## Resume Project Description
+# Tools Used
 
-Developed an end-to-end E-Commerce Analytics project using MySQL by designing a relational database with 7 tables and analyzing 5,600+ records. Performed customer, sales, product, category, review, and cart analytics using advanced SQL concepts including joins, aggregations, window functions, ranking functions, and KPI reporting to generate actionable business insights.
+- MySQL
+- MySQL Workbench
+- SQL
+- GitHub
+
+---
+
+# Key Business Insights Generated
+
+- Identified top-performing products and categories.
+- Tracked monthly revenue growth trends.
+- Analyzed customer retention and repeat purchase behavior.
+- Identified high-value customers.
+- Evaluated category-wise customer satisfaction.
+- Detected customers with abandoned carts.
+- Generated actionable business recommendations through SQL analytics.
+
+---
+
+# Resume Project Description
+
+**Developed an end-to-end E-Commerce Sales & Customer Analytics project using MySQL by designing a relational database with 7 tables and analyzing 5,600+ records through 30+ business-focused SQL queries. Leveraged JOINs, CTEs, Subqueries, Aggregate Functions, Window Functions, and Ranking Functions to generate insights on customer retention, sales trends, category performance, product analytics, customer behavior, review analytics, and cart abandonment.**
+
+---
+
+## Author
+
+**Vrushab Das**
+
+Data Analyst Portfolio Project
