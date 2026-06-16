@@ -305,13 +305,6 @@ ecommerce-sales-customer-analytics
 - Detected customers with abandoned carts.
 - Generated actionable business recommendations through SQL analytics.
 
----
-
-# Resume Project Description
-
-**Developed an end-to-end E-Commerce Sales & Customer Analytics project using MySQL by designing a relational database with 7 tables and analyzing 5,600+ records through 30+ business-focused SQL queries. Leveraged JOINs, CTEs, Subqueries, Aggregate Functions, Window Functions, and Ranking Functions to generate insights on customer retention, sales trends, category performance, product analytics, customer behavior, review analytics, and cart abandonment.**
-
----
 
 ## Author
 
